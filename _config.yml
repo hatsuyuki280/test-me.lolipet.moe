@@ -1,0 +1,12 @@
+deploy:
+  type: git
+  message: "Deployed Pages at {{ now('yyyy-MM-dd HH:mm') }}"
+  repo: https://github.com/hatsuyuki280/me.lolipet.moe.git
+  branch: gh-pages
+  token: $GH_TOKEN
+  extend_dirs:
+    - hotlink-ok
+    - attchments
+    - plugins
+  ignore_hidden:
+    public: false
